@@ -14,3 +14,6 @@ The server will start at port 9001
 
 # How to run the tests
 ./mvnw test  
+
+# To generate report 
+ ./mvnw surefire-report:report  

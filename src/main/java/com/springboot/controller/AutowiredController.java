@@ -19,7 +19,7 @@ import java.util.Optional;
 public class AutowiredController {
 
 
-	List<OfferRequest> allOffers = new ArrayList<>();
+	public List<OfferRequest> allOffers = new ArrayList<>();
 
 	@PostMapping(path = "/api/v1/offer")
 	public ApiResponse postOperation(@RequestBody OfferRequest offerRequest) {
@@ -52,7 +52,7 @@ public class AutowiredController {
 		return new ApplyOfferResponse(cartVal);
 	}
 
-	private SegmentResponse getSegmentResponse(int userid)
+	public SegmentResponse getSegmentResponse(int userid)
 	{
 		SegmentResponse segmentResponse = new SegmentResponse();
 		try {
